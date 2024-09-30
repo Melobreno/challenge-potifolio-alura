@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway";
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #eaf2fd;
+}
+
+.header__container .lista__navigator {
+  display: flex;
+  gap: 10px;
+  height: 100px;
+  align-items: center;
+}
+
+.lista__navigator li {
+  list-style-type: none;
+  gap: 10px;
+  color: black;
+  font: caption;
+  font-weight: 500;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.main__section--container {
+  display: flex;
+  max-width: 65vw;
+  margin: 0 auto;
+}
+
+.sobre__container--principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  height: 360px;
+}
+
+.sobre__container--principal .list__contacts {
+  display: flex;
+  margin: 15px 0;
+  list-style-type: none;
+  gap: 10px;
+
+  span {
+    width: 20px;
+  }
+}
+.sobre__container--left h1 {
+  margin-bottom: 15px;
+}
+
+.list__contacts li {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.sobre__container--principal .sobre__container--right img {
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.363);
+}
+
+.about__section--container {
+  width: 100vw;
+  background-color: #eaf2fd;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 380px;
+  max-width: 65vw;
+  justify-content: center;
+
+  h2 {
+    max-width: fit-content;
+    margin-bottom: 30px;
+  }
+}
+
+.about__container .textos {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  gap: 20px;
+}
+
+.about__container .textos p {
+  max-width: 1000px;
+  font-size: 1.3rem;
+}
+
+.skills__section {
+  display: flex;
+  flex-direction: column;
+  max-width: 65vw;
+  margin: 0 auto;
+  padding: 25px 0;
+  gap: 15px;
+}
+
+.boxes__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 170px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.box__item {
+  width: 170px;
+  height: 170px;
+  background-color: #ff6347;
+}
