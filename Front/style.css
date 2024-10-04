@@ -11,6 +11,17 @@
   justify-content: space-around;
 }
 
+.container__img--header img {
+  max-width: 500px;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+.container__img--header {
+  display: flex;
+  align-items: center;
+}
+
 .header__container .lista__navigator {
   display: flex;
   gap: 10px;
@@ -21,13 +32,19 @@
 .lista__navigator li {
   list-style-type: none;
   gap: 10px;
-  color: black;
   font: caption;
   font-weight: 500;
 
   a {
     text-decoration: none;
+    color: #313335;
   }
+}
+
+.lista__navigator li:hover {
+  transform: scale(1.05);
+  transition: all 100ms ease-in-out;
+  text-decoration: underline;
 }
 
 .main__section--container {
@@ -56,6 +73,16 @@
 }
 .sobre__container--left h1 {
   margin-bottom: 15px;
+}
+
+.list__contacts a {
+  text-decoration: none;
+  color: #313335;
+}
+
+.list__contacts a:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
 }
 
 .list__contacts li {
@@ -266,6 +293,24 @@
 .formulario__content {
   display: flex;
   flex-direction: column;
+  width: 500px;
+  padding: 10px;
+
+  input {
+    margin-bottom: 3px;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+
+  button {
+    margin-top: 10px;
+    background-color: #ffffff;
+    box-shadow: none;
+    border: 1px solid black;
+    padding: 5px;
+  }
 }
 
 .footer__container {
@@ -276,4 +321,56 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 375px) {
+  .header__container {
+    width: 100%;
+  }
+
+  .sobre__container--principal img {
+    display: none;
+  }
+
+  .academic__container {
+    display: grid;
+    grid-column: auto;
+  }
+
+  .academic__itens {
+    width: 250px;
+  }
+
+  .projeto__item {
+    display: flex;
+    flex-direction: column-reverse;
+    p {
+      max-width: fit-content;
+      font-size: 12px;
+      text-wrap: wrap;
+    }
+    img {
+      width: 300px;
+    }
+  }
+  .projeto__item-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    p {
+      max-width: fit-content;
+      font-size: 12px;
+      text-wrap: wrap;
+    }
+    img {
+      width: 300px;
+    }
+  }
+
+  .contatos__section form {
+    max-width: 370px;
+  }
+
+  .contatos__section img {
+    display: none;
+  }
 }

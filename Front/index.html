@@ -18,7 +18,9 @@
 
 <body>
   <header class="header__container">
-    <img src="" alt="Imagem do Header">
+    <div class="container__img--header">
+      <img src="../assets/imageBreno.png" alt="Imagem do Header">
+    </div>
 
     <nav>
       <ul class="lista__navigator">
@@ -40,18 +42,27 @@
           </h1>
           <p>Curso ADS na FICR e atualmente estou participando da trilha FrontEnd do projeto Oracle ONE + Alura</p>
           <ul class="list__contacts">
-            <li>GitHub <span class="material-symbols-outlined">
-                arrow_outward
-              </span></li>
-            <li>Linkedin <span class="material-symbols-outlined">
-                arrow_outward
-              </span></li>
-            <li>Instagram <span class="material-symbols-outlined">
-                arrow_outward
-              </span></li>
-            <li>Curriculo <span class="material-symbols-outlined">
-                arrow_outward
-              </span></li>
+            <a href="https://github.com/Melobreno" target="_blank">
+              <li>GitHub <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></li>
+            </a>
+            <a href="https://www.linkedin.com/in/melobreno/" target="_blank">
+              <li>Linkedin<span class="material-symbols-outlined">
+                  arrow_outward
+                </span></li>
+            </a>
+            <a href="https://www.instagram.com/_melobreno/" target="_blank">
+              <li>Instagram <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></li>
+            </a>
+            <a href="https://drive.google.com/file/d/1Z-0v9cY2Z-28Vam6yZ9tH5ih1H9SVszY/view?usp=drive_link"
+              target="_blank">
+              <li>Curriculo <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></li>
+            </a>
           </ul>
         </div>
         <div class="sobre__container--right">
@@ -65,18 +76,22 @@
         <h2>Sobre Mim</h2>
         <div class="textos">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempore obcaecati eligendi ducimus!
-            Animi
-            corporis voluptatum sit, doloremque molestias aliquid sapiente modi sequi eum dolore, vero nisi itaque,
-            nihil
-            aspernatur?
+            Olá, Tudo bem ?! <br>
+
+            👦Me chamo Breno Igor, tenho 23 anos. <br>
+            🖥️Cursando Análise e desenvolvimento de Sistemas na FICR <br>
+            🖥️Formado em Técnico de Análise e desenvolvimento de sistemas <br>
+            🛫Formado em Gestão de Turismo - IFPE
+
+            Atualmente estou participando de um projeto de tecnologia chamado Start+, onde tem como objetivo capacitar e
+            formar jovens para o mundo do TI. Estou seguindo a trilha de IA, e também atuo como monitor do projeto
+            Start.
+
+
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempore obcaecati eligendi ducimus!
-            Animi
-            corporis voluptatum sit, doloremque molestias aliquid sapiente modi sequi eum dolore, vero nisi itaque,
-            nihil
-            aspernatur?
+            <strong>Falando um pouco mais sobre mim</strong> <br>
+            Boa parte do tempo estou ouvindo musica, no meu tempo livre gosto de jogar e passar um tempo com a família.
           </p>
         </div>
       </div>
@@ -202,7 +217,7 @@
 
     <section class="contatos__section">
       <div class="contato__imagem">
-        <img src="../assets/imaContato.jpg" alt="">
+        <img src="../assets/imaContato.png" alt="">
       </div>
       <div class="contato__form">
         <form id="contactForm" class="formulario__content">
@@ -213,7 +228,9 @@
           <input type="email" name="email" id="email">
           <label for="msg">Mensagem:</label>
           <textarea name="msg" id="msg"></textarea>
-          <button type="submit">Enviar</button>
+          <div class="button_container">
+            <button type="submit">Enviar</button>
+          </div>
         </form>
       </div>
     </section>
