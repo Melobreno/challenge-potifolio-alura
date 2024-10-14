@@ -22,8 +22,10 @@
       <img src="../assets/imageBreno.png" alt="Imagem do Header">
     </div>
 
-    <nav>
-      <ul class="lista__navigator">
+    <nav class="classNav">
+      <button id="menuButton" style="background-color: transparent; border: none;"><img src="../assets/menu.svg"
+          alt="Menu"></button>
+      <ul class="lista__navigator" id="navList">
         <li><a href="">Sobre Mim</a></li>
         <li><a href="">Skills</a></li>
         <li><a href="">Hobbies</a></li>
@@ -282,6 +284,11 @@
             console.error("Erro ao tentar enviar o email")
           });
       }
+    });
+
+    document.getElementById('menuButton').addEventListener('click', function () {
+      const navList = document.getElementById('navList');
+      navList.classList.toggle('active'); // Adiciona ou remove a classe 'active'
     });
   </script>
 </body>
